@@ -1,0 +1,9 @@
+xmin, ymin: coordinates of top left corner of the bounding box/rectangle. Note: The top-left most corner of the image starts from 1 and hence, both of them 
+start from 1 and not 0.
+
+xmax, ymax: coordinates of the bottom right corner of the bounding box/rectangle Note: Maximum value of xmax is width of the image while maximum value of ymax 
+is the height of the image.
+
+./darknet detector train data/obj.data cfg/yolov4-obj.cfg yolov4.conv.137 -dont_show -mjpeg_port 8040 -map > output.txt
+
+./darknet detector test data/obj.data cfg/yolov4-obj.cfg yolov4.conv.137 > output-test.txt
